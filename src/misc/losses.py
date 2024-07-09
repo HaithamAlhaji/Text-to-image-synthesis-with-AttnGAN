@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 
 import numpy as np
-from src.misc.config import cfg
+from misc.config import cfg
 
-from src.GlobalAttention import func_attention
+from GlobalAttention import func_attention
 
 
 # ##################Loss for matching text-image###################

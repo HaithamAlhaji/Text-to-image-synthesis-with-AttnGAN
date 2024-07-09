@@ -1,9 +1,9 @@
 from __future__ import print_function
 
 
-from src.misc.config import cfg, cfg_from_file
-from src.dataset import TextDataset
-from src.trainer import condGANTrainer as trainer
+from misc.config import cfg, cfg_from_file
+from dataset import TextDataset
+from trainer import condGANTrainer as trainer
 
 import time
 import random
