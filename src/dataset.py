@@ -104,7 +104,6 @@ class TextDataset(data.Dataset):
         )
         self.target_transform = target_transform
         self.embeddings_num = cfg.TEXT.CAPTIONS_PER_IMAGE
-        print("aaaaaaaaaaaa")
         self.imsize = []
         for i in range(cfg.TREE.BRANCH_NUM):
             self.imsize.append(base_size)
@@ -117,6 +116,7 @@ class TextDataset(data.Dataset):
         else:
             self.bbox = None
         split_dir = os.path.join(data_dir, split)
+        print("aaaaaaaaaaaa")
 
         (
             self.filenames,
@@ -125,6 +125,7 @@ class TextDataset(data.Dataset):
             self.wordtoix,
             self.n_words,
         ) = self.load_text_data(data_dir, split)
+        print("bbbbbbbb")
 
         self.class_id = self.load_class_id(split_dir, len(self.filenames))
         self.number_example = len(self.filenames)
