@@ -104,7 +104,7 @@ class TextDataset(data.Dataset):
         )
         self.target_transform = target_transform
         self.embeddings_num = cfg.TEXT.CAPTIONS_PER_IMAGE
-
+        print("aaaaaaaaaaaa")
         self.imsize = []
         for i in range(cfg.TREE.BRANCH_NUM):
             self.imsize.append(base_size)
